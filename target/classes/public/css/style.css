@@ -1,0 +1,21 @@
+.header{
+    border-bottom: .05rem solid #e5e5e5;
+    padding-top: 50px;
+}
+
+.cerca{
+    width: 100%;
+}
+
+form{
+    padding: 10px;
+}
+
+.risultati{
+    padding: 10px;
+    width: 100%;
+}
+
+.totale{
+    text-align: right;
+}
