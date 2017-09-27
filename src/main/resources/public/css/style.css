@@ -19,3 +19,17 @@ form{
 .totale{
     text-align: right;
 }
+
+.singolo{
+    margin-top: 10px;
+    padding: 1.5rem;
+    border-width: .2rem;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    background-color: #f7f7f9;
+    list-style-type:none;
+}
+
+.listaRisultati{
+    padding-left: 0px;
+}

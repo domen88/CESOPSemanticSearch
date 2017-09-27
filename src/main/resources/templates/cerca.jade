@@ -17,7 +17,20 @@ html( lang="it" )
                             button(type="submit", class="btn btn-primary") Cerca
             .row
                 .risultati
-                    h3 #{message}
+                    ul.listaRisultati
+                        for docu in documents
+                                li.singolo
+                                    p.risultato
+                                        strong #{docu.nome} #{docu.cognome}
+                                    p.risultato
+                                        strong Competenze: &nbsp;
+                                        for cl in docu.competenzeLabels
+                                            span #{cl} &nbsp;
+                                    p.risultato
+                                        strong
+                                            mark Parents:
+                                        for clp in docu.competenzeParentsLabels
+                                            span &nbsp; #{clp}
             .row
                 .risultati
                     p.totale ricerca eseguita in #{total} secondi
