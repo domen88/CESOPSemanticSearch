@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.cesop.it/ontologies/"
+     xml:base="http://www.cesop.it/ontologies/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cesop.it/ontologies"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="&rdfs;label">
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Access -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Access">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft Access</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Albanese -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Albanese">
+        <rdfs:label rdf:datatype="&xsd;string">Lingua Albanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Altre -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Altre">
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Competenze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/AltreConoscenze -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/AltreConoscenze">
+        <rdfs:label rdf:datatype="&xsd;string">Altre conoscenze informatiche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Anagrafica -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Anagrafica">
+        <rdfs:label rdf:datatype="&xsd;string">Dati anagrafici</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Apache -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Apache">
+        <rdfs:label rdf:datatype="&xsd;string">Apache HTTP server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Application_Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Apache_Solr -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Apache_Solr">
+        <rdfs:label rdf:datatype="&xsd;string">Apache Solr Search Engine</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Motore di ricerca Apache Solr</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Non_Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Application_Server -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Application_Server">
+        <rdfs:label rdf:datatype="&xsd;string">Application Server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Applicativi -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Applicativi">
+        <rdfs:label rdf:datatype="&xsd;string">Applicativi Informatici</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/C -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/C">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Strutturati"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/CRM -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/CRM">
+        <rdfs:label rdf:datatype="&xsd;string">Gestione dei contenuti</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/CS -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/CS">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio CS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Oggetti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/CSS -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/CSS">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio CSS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Candidato -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Candidato">
+        <rdfs:label rdf:datatype="&xsd;string">Profilo di un candidato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Cassandra -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Cassandra">
+        <rdfs:label rdf:datatype="&xsd;string">Cassandra Database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Non_Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Cognome -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Cognome">
+        <rdfs:label rdf:datatype="&xsd;string">Cognome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Anagrafica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Competenze -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Competenze">
+        <rdfs:label rdf:datatype="&xsd;string">Competenze di un candidato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Comune -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Comune">
+        <rdfs:label rdf:datatype="&xsd;string">Comune di domicilio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Domicilio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Comune2 -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Comune2">
+        <rdfs:label rdf:datatype="&xsd;string">Comune di residenza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Residenza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/CouchDB -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/CouchDB">
+        <rdfs:label rdf:datatype="&xsd;string">CouchDB Database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Non_Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/DataBase -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/DataBase">
+        <rdfs:label rdf:datatype="&xsd;string">Gestione basi di dati</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Dichiarativi -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Dichiarativi">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggi Dichiarativi</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Programmazione Logica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguaggi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Domicilio -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Domicilio">
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Geolocalizzazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Esperienze -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Esperienze">
+        <rdfs:label rdf:datatype="&xsd;string">Esperienze lavorative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Eta -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Eta">
+        <rdfs:label rdf:datatype="&xsd;string">Età</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Anagrafica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Excel -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Excel">
+        <rdfs:label rdf:datatype="&xsd;string">Fogli di calcolo</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft Excel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Fortran -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Fortran">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Fortran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Strutturati"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Francese -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Francese">
+        <rdfs:label rdf:datatype="&xsd;string">Lingua Francese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Funzionali -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Funzionali">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggi Funzionali</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Programmazione Funzionale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguaggi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Geolocalizzazione -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Geolocalizzazione">
+        <rdfs:label rdf:datatype="&xsd;string">Geolocalizzazione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/HTML -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/HTML">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio HTML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Hardware -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Hardware">
+        <rdfs:label rdf:datatype="&xsd;string">Conoscenze Hardware</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Hardware lato client</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Hardware lato server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/AltreConoscenze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Haskell -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Haskell">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Haskell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Funzionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Indirizzo -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Indirizzo">
+        <rdfs:label rdf:datatype="&xsd;string">Indirizzo di domicilio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Domicilio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Indirizzo2 -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Indirizzo2">
+        <rdfs:label rdf:datatype="&xsd;string">Indirizzo di residenza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Residenza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Informatiche -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Informatiche">
+        <rdfs:label rdf:datatype="&xsd;string">Competenze Informatiche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Competenze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Inglese -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Inglese">
+        <rdfs:label rdf:datatype="&xsd;string">Lingua Inglese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Italiano -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Italiano">
+        <rdfs:label rdf:datatype="&xsd;string">Lingua Italiana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/JBoss -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/JBoss">
+        <rdfs:label rdf:datatype="&xsd;string">Java Web Server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Application_Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/JSON -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/JSON">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio JSON</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Java -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Java">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Java</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Oggetti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/JavaScript -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/JavaScript">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio JavaScript</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/LISP -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/LISP">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio LISP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Funzionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Latex -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Latex">
+        <rdfs:label rdf:datatype="&xsd;string">Scrittura in Latex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Linguaggi -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Linguaggi">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggi di Programmazione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Linguistiche -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Linguistiche">
+        <rdfs:label rdf:datatype="&xsd;string">Conoscenze Linguistiche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Competenze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Linux -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Linux">
+        <rdfs:label rdf:datatype="&xsd;string">Sistemi operativi Linux</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/MAC_OS -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/MAC_OS">
+        <rdfs:label rdf:datatype="&xsd;string">Sistemi operativi Apple</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Microsoft -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Microsoft">
+        <rdfs:label rdf:datatype="&xsd;string">Sistemi operativi Windows</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/MongoDB -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/MongoDB">
+        <rdfs:label rdf:datatype="&xsd;string">MongoDB Database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Non_Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/MySQL -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/MySQL">
+        <rdfs:label rdf:datatype="&xsd;string">Database MySQL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Nome -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Nome">
+        <rdfs:label rdf:datatype="&xsd;string">Nome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Anagrafica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Non_Relazionali -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Non_Relazionali">
+        <rdfs:label rdf:datatype="&xsd;string">Database Non Relazionali</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/DataBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Oggetti -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Oggetti">
+        <rdfs:label rdf:datatype="&xsd;string">Object Oriented Programming</rdfs:label>
+        <rdfs:label xml:lang="it">Linguaggi Orientati agli Oggetti</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguaggi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/PHP -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/PHP">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio PHP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Pacchetti_grafici -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Pacchetti_grafici">
+        <rdfs:label rdf:datatype="&xsd;string">Applicazioni grafiche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Pacchetti_statistici -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Pacchetti_statistici">
+        <rdfs:label rdf:datatype="&xsd;string">Applicazioni statistiche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Pascal -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Pascal">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Pascal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Strutturati"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Posta_Elettronica -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Posta_Elettronica">
+        <rdfs:label rdf:datatype="&xsd;string">Gestione della posta elettronica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/PostgresSQL -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/PostgresSQL">
+        <rdfs:label rdf:datatype="&xsd;string">Database Postgres SQL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Powerpoint -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Powerpoint">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft PowerPoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Prolog -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Prolog">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Prolog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Dichiarativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Python -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Python">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Python</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Oggetti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Relazionali -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Relazionali">
+        <rdfs:label rdf:datatype="&xsd;string">Database Relazionali</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/DataBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Residenza -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Residenza">
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Geolocalizzazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/SAP -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/SAP">
+        <rdfs:label rdf:datatype="&xsd;string">Gestione dei flussi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/SQL -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/SQL">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio SQL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/SQL_Server -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/SQL_Server">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft SQL Server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Relazionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Scala -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Scala">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio Scala</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Funzionali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Sesso -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Sesso">
+        <rdfs:label rdf:datatype="&xsd;string">Sesso</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Anagrafica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Sistemi_Operativi_e_Reti">
+        <rdfs:label rdf:datatype="&xsd;string">Infrastrutture di rete</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Sistemi Operativi</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Web Server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Strutturati -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Strutturati">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggi Strutturati</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguaggi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Studi -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Studi">
+        <rdfs:label rdf:datatype="&xsd;string">Formazione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Tedesco -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Tedesco">
+        <rdfs:label rdf:datatype="&xsd;string">Lingua Tedesca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Tomcat -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Tomcat">
+        <rdfs:label rdf:datatype="&xsd;string">Tomcat Web Server</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Application_Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/WEB -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/WEB">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggi per il Web</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguaggi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/WebSphere -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/WebSphere">
+        <rdfs:label rdf:datatype="&xsd;string">IBM WebSphere</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Application_Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Word -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Word">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft Word</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/XML -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/XML">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/C++ -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/C++">
+        <rdfs:label rdf:datatype="&xsd;string">Linguaggio C++</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Oggetti"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
