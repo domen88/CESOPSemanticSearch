@@ -86,12 +86,18 @@
         </dependency>
 
         <!-- SolrJ -->
-        <dependency>
+        <!-- <dependency>
             <artifactId>solr-solrj</artifactId>
             <groupId>org.apache.solr</groupId>
-            <version>1.4.0</version>
+            <version>1.4.1</version>
             <type>jar</type>
             <scope>compile</scope>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
+            <version>6.6.0</version>
         </dependency>
 
     </dependencies>
