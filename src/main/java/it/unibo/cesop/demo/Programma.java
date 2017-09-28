@@ -32,6 +32,8 @@ public class Programma {
         //URL Solr
         final SolrClient server = new HttpSolrClient.Builder("http://137.204.57.106:8983/solr/VisionTestCurriculumCollection").build();
 
+        //Program param
+        final boolean mode = args.length != 0 ? Boolean.FALSE : Boolean.TRUE;
 
         get("/", (request, response) -> {
             Map<String, String> model = new HashMap<>();
@@ -50,12 +52,17 @@ public class Programma {
             //Set solr query
             final String wildCard= "http\\:\\/\\/www.cesop.it\\/ontologies\\/";
             SolrQuery query = new SolrQuery();
-            String squery = String.format("Competenze_ancestors_labels_t:%s OR Competenze_parent_labels_t:%s OR Competenze_label_t:%s", cerca, cerca, cerca);
+            String squery;
+            if (mode) {
+                squery = String.format("Competenze_ancestors_labels_t:%s OR Competenze_parent_labels_t:%s OR Competenze_label_t:%s", cerca, cerca, cerca);
+            } else {
+                squery = String.format("Competenze:%s", cerca);
+            }
             query.setQuery(squery);
             //query.addFilterQuery("Cognome:"+ cerca);
 
             //Get results
-            QueryResponse rsp = server.query( query );
+            QueryResponse rsp = server.query(query);
             SolrDocumentList docs = rsp.getResults();
             List<Document> beans = rsp.getBeans(Document.class);
 
@@ -63,7 +70,9 @@ public class Programma {
             Duration duration = Duration.between(start, stop);
             double seconds = (double)duration.getNano() / 1000000000.0;
             model.put("total", String.format("%.3f", seconds));
+            model.put("nris", beans.size());
             model.put("documents", beans);
+            model.put("mode", mode);
 
             return new ModelAndView(model, "cerca"); // located in resources/templates directory
         }, new JadeTemplateEngine());

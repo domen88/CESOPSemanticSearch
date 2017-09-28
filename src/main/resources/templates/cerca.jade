@@ -22,21 +22,25 @@ html( lang="it" )
                                 li.singolo
                                     p.risultato
                                         strong #{docu.nome} #{docu.cognome}
-                                    p.risultato
-                                        strong
-                                            mark Competenze:
-                                        for cl in docu.competenzeLabels
-                                            span &nbsp; #{cl}
-                                    p.risultato
-                                        strong
-                                            mark Parents:
-                                        for clp in docu.competenzeParentsLabels
-                                            span &nbsp; #{clp}
-                                    p.risultato
-                                        strong
-                                            mark Ancestors:
-                                        for cla in docu.competenzeAncestorsLabels
-                                            span &nbsp; #{cla}
+                                    if mode
+                                        p.risultato
+                                            strong
+                                                mark Competenze:
+                                            for cl in docu.competenzeLabels
+                                                span &nbsp; #{cl}
+                                        p.risultato
+                                            strong
+                                                mark Parents:
+                                            for clp in docu.competenzeParentsLabels
+                                                span &nbsp; #{clp}
+                                        p.risultato
+                                            strong
+                                                mark Ancestors:
+                                            for cla in docu.competenzeAncestorsLabels
+                                                span &nbsp; #{cla}
             .row
                 .risultati
-                    p.totale ricerca eseguita in #{total} secondi
+                    if nris != 1
+                        p.totale #{nris} risultati in #{total} secondi
+                    else
+                        p.totale #{nris} risultato in #{total} secondi
