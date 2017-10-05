@@ -29,11 +29,11 @@ public class Programma {
         //Set static file folder
         staticFileLocation("/public/css");
 
-        //URL Solr
-        final SolrClient server = new HttpSolrClient.Builder("http://137.204.57.106:8983/solr/VisionTestCurriculumCollection").build();
-
         //Program param
-        final boolean mode = args.length != 0 ? Boolean.FALSE : Boolean.TRUE;
+        final boolean mode = args[0].equals("137.204.57.106") ? Boolean.TRUE : Boolean.FALSE;
+
+        //URL Solr
+        final SolrClient server = new HttpSolrClient.Builder("http://"+args[0]+":8983/solr/VisionTestCurriculumCollection").build();
 
         get("/", (request, response) -> {
             Map<String, String> model = new HashMap<>();
@@ -58,6 +58,7 @@ public class Programma {
             } else {
                 squery = String.format("Competenze:%s", cerca);
             }
+            query.setRows(Integer.MAX_VALUE);
             query.setQuery(squery);
             //query.addFilterQuery("Cognome:"+ cerca);
 
