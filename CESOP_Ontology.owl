@@ -75,7 +75,7 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Accenture">
         <rdfs:label rdf:datatype="&xsd;string">Accenture</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -102,7 +102,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Adecco">
         <rdfs:label rdf:datatype="&xsd;string">Adecco</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -111,7 +111,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Ags">
         <rdfs:label rdf:datatype="&xsd;string">AGS</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -120,7 +120,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Aive">
         <rdfs:label rdf:datatype="&xsd;string">Aive</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -156,7 +156,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Almaviva">
         <rdfs:label rdf:datatype="&xsd;string">Almaviva</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -237,7 +237,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Assioma_net">
         <rdfs:label rdf:datatype="&xsd;string">Assioma Net</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -386,7 +386,7 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Capgemini">
         <rdfs:label rdf:datatype="&xsd;string">Capgemini</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -431,7 +431,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Cineca">
         <rdfs:label rdf:datatype="&xsd;string">Cineca</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -563,7 +563,7 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Dale_consulting">
         <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Dale Consulting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -666,7 +666,7 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Engineering">
         <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Engineering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 
@@ -695,6 +695,15 @@
         <rdfs:label rdf:datatype="&xsd;string">Fogli di calcolo</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Microsoft Excel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Applicativi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/ExpInformatica -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/ExpInformatica">
+        <rdfs:label rdf:datatype="&xsd;string">Esperienza-Informatica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
     </owl:Class>
     
 
@@ -933,15 +942,6 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Indonesiano">
         <rdfs:label rdf:datatype="&xsd;string">Indonesiano</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cesop.it/ontologies/Informatica -->
-
-    <owl:Class rdf:about="http://www.cesop.it/ontologies/Informatica">
-        <rdfs:label rdf:datatype="&xsd;string">Informatica</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
     </owl:Class>
     
 
@@ -1648,7 +1648,7 @@
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Txt_e-solutions">
         <rdfs:label rdf:datatype="&xsd;string">Txt e-solutions</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/ExpInformatica"/>
     </owl:Class>
     
 

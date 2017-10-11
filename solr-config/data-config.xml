@@ -33,8 +33,8 @@
       </entity>
 
       <entity name="Az"
-              query=" SELECT 'http://www.cesop.it/ontologies/' + Azienda 
-                      FROM dbo.EsperienzeLavorative
+              query=" SELECT 'http://www.cesop.it/ontologies/' + E.Azienda as Azienda
+                      FROM dbo.EsperienzeLavorative as E
                       WHERE PersonaId='${Persona.UserId}'">
         <field column="Azienda" name="Aziende" />
       </entity>
