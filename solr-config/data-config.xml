@@ -1,0 +1,45 @@
+<dataConfig>
+  <!--
+  <dataSource type="JdbcDataSource"
+              driver="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost/dbname"
+              user="user-name"
+              password="password"/>
+  -->
+  <dataSource type="JdbcDataSource"
+              driver="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://137.204.57.178\SQLEXPRESS:1433;Database=cvwebFull;User Id=cvwebvisionsql;Password=cesopsqlpwd"
+              user="cvwebvisionsql"
+              password="cesopsqlpwd"/>
+  
+  <document>
+    
+    <entity name="Persona"
+            query="SELECT P.UserId, P.Nome, P.Cognome
+              FROM dbo.Persone as P
+    		      WHERE P.UserId is not null
+    		      ORDER BY P.UserId ASC">
+
+      <field column="UserId" name="Id" />
+      <field column="Nome" name="Nome" />
+      <field column="Cognome" name="Cognome" />
+
+      <entity name="Comp"
+              query="SELECT 'http://www.cesop.it/ontologies/' + CT.Descrizione as Descrizione
+                        FROM dbo.Competenze as C 
+                        JOIN dbo.CompetenzaTipo as CT ON CT.ID = C.CompetenzaTipoId
+                        WHERE C.PersonaId='${Persona.UserId}'">
+        <field column="Descrizione" name="Competenze" />
+      </entity>
+
+      <entity name="Az"
+              query=" SELECT 'http://www.cesop.it/ontologies/' + Azienda 
+                      FROM dbo.EsperienzeLavorative
+                      WHERE PersonaId='${Persona.UserId}'">
+        <field column="Azienda" name="Aziende" />
+      </entity>
+
+    </entity>
+   	
+  </document>
+</dataConfig>

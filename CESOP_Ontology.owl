@@ -61,6 +61,25 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Abbigliamento -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Abbigliamento">
+        <rdfs:label rdf:datatype="&xsd;string">Abbigliamento</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Accenture -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Accenture">
+        <rdfs:label rdf:datatype="&xsd;string">Accenture</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Access -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Access">
@@ -79,6 +98,33 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Adecco -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Adecco">
+        <rdfs:label rdf:datatype="&xsd;string">Adecco</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Ags -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Ags">
+        <rdfs:label rdf:datatype="&xsd;string">AGS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Aive -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Aive">
+        <rdfs:label rdf:datatype="&xsd;string">Aive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Ajax -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Ajax">
@@ -93,6 +139,24 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Albanese">
         <rdfs:label rdf:datatype="&xsd;string">Albanese</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Alimentare -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Alimentare">
+        <rdfs:label rdf:datatype="&xsd;string">Alimentare</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Almaviva -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Almaviva">
+        <rdfs:label rdf:datatype="&xsd;string">Almaviva</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
     </owl:Class>
     
 
@@ -160,11 +224,60 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Arredamento -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Arredamento">
+        <rdfs:label rdf:datatype="&xsd;string">Arredamento</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Assioma_net -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Assioma_net">
+        <rdfs:label rdf:datatype="&xsd;string">Assioma Net</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Assistenza_clienti -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Assistenza_clienti">
         <rdfs:label rdf:datatype="&xsd;string">Assistenza clienti</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Conoscenze_operative_business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Autogrill -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Autogrill">
+        <rdfs:label rdf:datatype="&xsd;string">Autogrill</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Alimentare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Automobili -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Automobili">
+        <rdfs:label rdf:datatype="&xsd;string">Automobile</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Automobili</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Automotive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Barilla -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Barilla">
+        <rdfs:label rdf:datatype="&xsd;string">Barilla</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Pasta</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Pastificio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Alimentare"/>
     </owl:Class>
     
 
@@ -178,11 +291,39 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Benetton_group -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Benetton_group">
+        <rdfs:label rdf:datatype="&xsd;string">Benetton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Bosch -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Bosch">
+        <rdfs:label rdf:datatype="&xsd;string">Bosch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Bosniaco -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Bosniaco">
         <rdfs:label rdf:datatype="&xsd;string">Bosniaco</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Brembo -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Brembo">
+        <rdfs:label rdf:datatype="&xsd;string">Brembo</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Freni</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
     </owl:Class>
     
 
@@ -240,6 +381,16 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Capgemini -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Capgemini">
+        <rdfs:label rdf:datatype="&xsd;string">Capgemini</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Cassandra -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Cassandra">
@@ -267,11 +418,39 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Cern -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Cern">
+        <rdfs:label rdf:datatype="&xsd;string">CERN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Ricerca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Cineca -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Cineca">
+        <rdfs:label rdf:datatype="&xsd;string">Cineca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Cinese -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Cinese">
         <rdfs:label rdf:datatype="&xsd;string">Cinese</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Cnr -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Cnr">
+        <rdfs:label rdf:datatype="&xsd;string">CNR</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Consiglio nazionale delle ricerche</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Ricerca"/>
     </owl:Class>
     
 
@@ -379,11 +558,30 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Dale_consulting -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Dale_consulting">
+        <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Dale Consulting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Danese -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Danese">
         <rdfs:label rdf:datatype="&xsd;string">Danese</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Danone -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Danone">
+        <rdfs:label rdf:datatype="&xsd;string">Danone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Alimentare"/>
     </owl:Class>
     
 
@@ -394,6 +592,15 @@
         <rdfs:label rdf:datatype="&xsd;string">Basi di dati</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Database</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Decathlon_srl -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Decathlon_srl">
+        <rdfs:label rdf:datatype="&xsd;string">Decathlon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
     </owl:Class>
     
 
@@ -418,9 +625,19 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Dolce_e_gabbana -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Dolce_e_gabbana">
+        <rdfs:label rdf:datatype="&xsd;string">Dolce &amp; Gabbana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Domicilio -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Domicilio">
+        <rdfs:label rdf:datatype="&xsd;string">Domicilio</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Geolocalizzazione"/>
     </owl:Class>
     
@@ -444,10 +661,20 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Engineering -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Engineering">
+        <rdfs:label rdf:datatype="&xsd;string">Consulenza</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Engineering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Esperienze -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Esperienze">
-        <rdfs:label rdf:datatype="&xsd;string">Esperienze lavorative</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Esperienze</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Candidato"/>
     </owl:Class>
     
@@ -472,6 +699,34 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Fendi -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Fendi">
+        <rdfs:label rdf:datatype="&xsd;string">Fendi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Ferrero_spa -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Ferrero_spa">
+        <rdfs:label rdf:datatype="&xsd;string">Ferrero</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Kinder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Alimentare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Fiat -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Fiat">
+        <rdfs:label rdf:datatype="&xsd;string">Fiat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Finanza -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Finanza">
@@ -486,6 +741,15 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Finlandese">
         <rdfs:label rdf:datatype="&xsd;string">Finlandese</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Foot_locker -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Foot_locker">
+        <rdfs:label rdf:datatype="&xsd;string">Foot Locker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
     </owl:Class>
     
 
@@ -628,6 +892,15 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Ikea -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Ikea">
+        <rdfs:label rdf:datatype="&xsd;string">IKEA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Arredamento"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Indiano -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Indiano">
@@ -660,6 +933,15 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Indonesiano">
         <rdfs:label rdf:datatype="&xsd;string">Indonesiano</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Informatica -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Informatica">
+        <rdfs:label rdf:datatype="&xsd;string">Informatica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
     </owl:Class>
     
 
@@ -700,12 +982,30 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Istituto_nazionale_di_fisica_nucleare -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Istituto_nazionale_di_fisica_nucleare">
+        <rdfs:label rdf:datatype="&xsd;string">Istituto nazionale di fisica nucleare</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Ricerca"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Italiano -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Italiano">
         <rdfs:label rdf:datatype="&xsd;string">Italiana</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Italiano</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Iveco -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Iveco">
+        <rdfs:label rdf:datatype="&xsd;string">Iveco</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
     </owl:Class>
     
 
@@ -864,6 +1164,15 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Magneti_marelli -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Magneti_marelli">
+        <rdfs:label rdf:datatype="&xsd;string">Magneti Marelli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Marketing -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Marketing">
@@ -1002,6 +1311,16 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Polo_ralph_lauren -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Polo_ralph_lauren">
+        <rdfs:label rdf:datatype="&xsd;string">Polo</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Ralph Lauren</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Portoghese -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Portoghese">
@@ -1014,7 +1333,8 @@
     <!-- http://www.cesop.it/ontologies/Portoghese_brasiliano -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Portoghese_brasiliano">
-        <rdfs:label rdf:datatype="&xsd;string">Portoghese_brasiliano</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Brasiliano</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Portoghese Brasiliano</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
     </owl:Class>
     
@@ -1058,6 +1378,15 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Primark -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Primark">
+        <rdfs:label rdf:datatype="&xsd;string">Primark</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Produzione -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Produzione">
@@ -1097,7 +1426,17 @@
     <!-- http://www.cesop.it/ontologies/Residenza -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Residenza">
+        <rdfs:label rdf:datatype="&xsd;string">Residenza</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Geolocalizzazione"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Ricerca -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Ricerca">
+        <rdfs:label rdf:datatype="&xsd;string">Ricerca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Esperienze"/>
     </owl:Class>
     
 
@@ -1287,11 +1626,29 @@
     
 
 
+    <!-- http://www.cesop.it/ontologies/Toyota_motor_italia -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Toyota_motor_italia">
+        <rdfs:label rdf:datatype="&xsd;string">Toyota</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.cesop.it/ontologies/Turco -->
 
     <owl:Class rdf:about="http://www.cesop.it/ontologies/Turco">
         <rdfs:label rdf:datatype="&xsd;string">Turco</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Linguistiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Txt_e-solutions -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Txt_e-solutions">
+        <rdfs:label rdf:datatype="&xsd;string">Txt e-solutions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Informatica"/>
     </owl:Class>
     
 
@@ -1312,6 +1669,15 @@
         <rdfs:label rdf:datatype="&xsd;string">Visual Basic</rdfs:label>
         <rdfs:label rdf:datatype="&xsd;string">Visual Basic .NET</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Oggetti"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Volkswagen_group_italia -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Volkswagen_group_italia">
+        <rdfs:label rdf:datatype="&xsd;string">Volkswagen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Automobili"/>
     </owl:Class>
     
 
@@ -1357,6 +1723,15 @@
     <owl:Class rdf:about="http://www.cesop.it/ontologies/XML">
         <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/WEB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cesop.it/ontologies/Zara -->
+
+    <owl:Class rdf:about="http://www.cesop.it/ontologies/Zara">
+        <rdfs:label rdf:datatype="&xsd;string">Zara</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cesop.it/ontologies/Abbigliamento"/>
     </owl:Class>
     
 
