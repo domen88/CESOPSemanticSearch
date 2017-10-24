@@ -48,6 +48,24 @@ public class Document {
     @Field("Competenze_ancestors_labels_t")
     private List<String> competenzeAncestorsLabels;
 
+    @Field("Aziende")
+    private List<String> aziende;
+
+    @Field("Aziende_label_t")
+    private List<String> aziendeLabels;
+
+    @Field("Aziende_parent_uris_s")
+    private List<String> aziendeParents;
+
+    @Field("Aziende_parent_labels_t")
+    private List<String> aziendeParentsLabels;
+
+    @Field("Aziende_ancestors_uris_s")
+    private List<String> aziendeAncestors;
+
+    @Field("Aziende_ancestors_labels_t")
+    private List<String> aziendeAncestorsLabels;
+
 
     public String getId() {
         return id;
@@ -159,5 +177,53 @@ public class Document {
 
     public void setCompetenzeAncestorsLabels(List<String> competenzeAncestorsLabels) {
         this.competenzeAncestorsLabels = competenzeAncestorsLabels;
+    }
+
+    public List<String> getAziende() {
+        return aziende;
+    }
+
+    public void setAziende(List<String> aziende) {
+        this.aziende = aziende;
+    }
+
+    public List<String> getAziendeLabels() {
+        return aziendeLabels;
+    }
+
+    public void setAziendeLabels(List<String> aziendeLabels) {
+        this.aziendeLabels = aziendeLabels;
+    }
+
+    public List<String> getAziendeParents() {
+        return aziendeParents;
+    }
+
+    public void setAziendeParents(List<String> aziendeParents) {
+        this.aziendeParents = aziendeParents;
+    }
+
+    public List<String> getAziendeParentsLabels() {
+        return aziendeParentsLabels;
+    }
+
+    public void setAziendeParentsLabels(List<String> aziendeParentsLabels) {
+        this.aziendeParentsLabels = aziendeParentsLabels;
+    }
+
+    public List<String> getAziendeAncestors() {
+        return aziendeAncestors;
+    }
+
+    public void setAziendeAncestors(List<String> aziendeAncestors) {
+        this.aziendeAncestors = aziendeAncestors;
+    }
+
+    public List<String> getAziendeAncestorsLabels() {
+        return aziendeAncestorsLabels;
+    }
+
+    public void setAziendeAncestorsLabels(List<String> aziendeAncestorsLabels) {
+        this.aziendeAncestorsLabels = aziendeAncestorsLabels;
     }
 }

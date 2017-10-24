@@ -33,3 +33,7 @@ form{
 .listaRisultati{
     padding-left: 0px;
 }
+
+label{
+    padding: 5px;
+}

@@ -10,9 +10,19 @@ html( lang="it" )
             .header
                 form(name="input", action="/cerca", method="post")
                     div.form-row.align-items-center
-                        div.col-sm-9
+                        div.col-sm-5
                             input.cerca(type="text", name="cerca", placeholder="Cerca" required)
-
+                        div.col-sm-2
+                            select(name="tipo")
+                                option(value="Competenze") competenza
+                                option(value="Aziende") esperienza
+                        div.col-sm-3
+                            input(type="radio" name="livello" value="0" checked="true" id="livello0")
+                            label(for='livello0') Livello 0
+                            input(type="radio" name="livello" value="1" id="livello1")
+                            label(for='livello1') Livello 1
+                            input(type="radio" name="livello" value="2" id="livello2")
+                            label(for='livello2') Livello 2
                         div.col-auto
                             button(type="submit", class="btn btn-primary") Cerca
             .row
@@ -23,21 +33,38 @@ html( lang="it" )
                                     p.risultato
                                         strong #{docu.nome} #{docu.cognome}
                                     if mode
-                                        p.risultato
-                                            strong
-                                                mark Competenze:
-                                            for cl in docu.competenzeLabels
-                                                span &nbsp; #{cl}
-                                        p.risultato
-                                            strong
-                                                mark Parents:
-                                            for clp in docu.competenzeParentsLabels
-                                                span &nbsp; #{clp}
-                                        p.risultato
-                                            strong
-                                                mark Ancestors:
-                                            for cla in docu.competenzeAncestorsLabels
-                                                span &nbsp; #{cla}
+                                        if mode1
+                                            p.risultato
+                                                strong
+                                                    mark Competenze:
+                                                for cl in docu.competenzeLabels
+                                                    span &nbsp; #{cl}
+                                            p.risultato
+                                                strong
+                                                    mark Parents:
+                                                for clp in docu.competenzeParentsLabels
+                                                    span &nbsp; #{clp}
+                                            p.risultato
+                                                strong
+                                                    mark Ancestors:
+                                                for cla in docu.competenzeAncestorsLabels
+                                                    span &nbsp; #{cla}
+                                        else
+                                            p.risultato
+                                                strong
+                                                    mark Esperienze:
+                                                for cl in docu.aziendeLabels
+                                                    span &nbsp; #{cl}
+                                            p.risultato
+                                                strong
+                                                    mark Parents:
+                                                for clp in docu.aziendeParentsLabels
+                                                    span &nbsp; #{clp}
+                                            p.risultato
+                                                strong
+                                                    mark Ancestors:
+                                                for cla in docu.aziendeAncestorsLabels
+                                                    span &nbsp; #{cla}
             .row
                 .risultati
                     if nris != 1
